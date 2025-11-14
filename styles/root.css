@@ -1,0 +1,10 @@
+:root {
+
+    padding: 0;
+    margin: 0;
+
+    --borde-flama: dashed red 4px;
+    --borde-tristoncio: solid gray 1px;
+    border-radius: 3px;
+
+}

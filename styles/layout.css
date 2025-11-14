@@ -1,0 +1,43 @@
+:root{
+
+ padding: 0;
+ margin: 0;
+
+}
+
+div{
+    border: solid tomato 3px;
+}
+
+.container{
+     display: grid;
+     width:90vw;
+     height: 70vh;
+    
+     grid-template-columns: 1;
+     grid-template-rows: 5;
+    
+}
+
+.apartadoDoble{
+    display: grid;
+    border: var(--borde-flama);
+   
+}
+
+.sideBar{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border: var(--borde-tristoncio);
+    background-color: red;
+}
+
+.bodyArea{
+grid-column-start: 2;
+grid-column-end: 5;
+background-color: yellow;
+}   
+
+.apartado{
+    background-color: lightblue;
+}
