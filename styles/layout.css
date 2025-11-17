@@ -4,19 +4,31 @@
  margin: 0;
 
 }
+body{
+    margin:0;
+}
 
-div{
-    border: solid tomato 3px;
+nav{
+    background-color: var(--color-nav);
+    display: flex;
+    justify-content: space-evenly;
+    
+    padding: 5vh;
+}
+
+a{
+    text-decoration:  line-through;
+    color: black;
 }
 
 .container{
      display: grid;
-     width:90vw;
-     height: 70vh;
+     width:100vw;
+     height: 80vh;
     
-     grid-template-columns: 1;
+     grid-template-columns: 2;
      grid-template-rows: 5;
-    
+     border: solid tomato 3px;
 }
 
 .apartadoDoble{
@@ -40,4 +52,62 @@ background-color: yellow;
 
 .apartado{
     background-color: lightblue;
+}
+
+.columna1{
+    display: grid;
+    grid-column-start:1 ;
+    grid-column-end: 2;
+        background-color: rgb(171, 243, 237);
+
+}
+
+.columna2{
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+        background-color: rgb(236, 238, 128);
+
+}
+
+.verde{
+    display: grid;
+    grid-row: 2/3;
+
+}
+
+.spot{
+    display: grid;
+grid-row: 1/2;
+
+}
+
+.distinto {
+    grid-row: 3/4;
+
+    display: grid;
+    
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+    background-color: unset;
+    background-color: var(--color-chulo); 
+       border:var(--borde-tristoncio);
+}
+
+.c1Distinto{
+    display: grid;
+    grid-column:1/2;
+
+    background-color: unset;
+        background-color: var(--color-chulo);
+}
+
+.c2Distinto{
+    display: grid;
+    grid-column: 2/3;
+
+        background-color: unset;
+            background-color: var(--color-nav);
+
+
 }

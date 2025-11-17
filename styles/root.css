@@ -5,6 +5,9 @@
 
     --borde-flama: dashed red 4px;
     --borde-tristoncio: solid gray 1px;
+    --color-nav: rgb(252, 208, 128);
+    --color-chulo: rgb(198, 252, 128);
+    --color-amarillo: rgb(234, 255, 114);
     border-radius: 3px;
 
 }
