@@ -1,3 +1,45 @@
+@media screen and (min-width: 1000px) {
+    body {
+        background-color: lightgreen;
+    }
+
+        nav {
+            background-color: var(--color-chulo);
+            display: flex;
+            justify-content: left;
+    
+            padding: 5vh;
+        }
+    
+        a {
+            text-decoration: dotted;
+            color: black;
+        }
+
+        div{
+            border : solid red 2px;
+        }
+
+        .verde:hover {
+            background-color: var(--color-nav);
+        }
+
+        .distinto {
+                    grid-row: 3/4;
+        
+                    display: grid;
+        
+                    grid-template-columns: 2;
+                    grid-template-rows: 1;
+                    grid-auto-flow: column;
+                    background-color: unset;
+                    background-color: var(--color-chulo);
+                    border: var(--borde-tristoncio);
+                }
+       
+}
+
+
 :root{
 
  padding: 0;
@@ -24,7 +66,7 @@ a{
 .container{
      display: grid;
      width:100vw;
-     height: 80vh;
+     height: 80vh;  
     
      grid-template-columns: 2;
      grid-template-rows: 5;
@@ -56,6 +98,7 @@ background-color: yellow;
 
 .columna1{
     display: grid;
+    width: 50vw;
     grid-column-start:1 ;
     grid-column-end: 2;
         background-color: rgb(171, 243, 237);
@@ -64,6 +107,7 @@ background-color: yellow;
 
 .columna2{
     display: grid;
+    width: 50vw;
     grid-column-start: 2;
     grid-column-end: 3;
         background-color: rgb(236, 238, 128);
@@ -74,6 +118,11 @@ background-color: yellow;
     display: grid;
     grid-row: 2/3;
 
+
+}
+
+.verde:hover{
+    background-color: var(--color-chulo);
 }
 
 .spot{
